@@ -19,7 +19,7 @@ const reduceToTotal = function(sourceArray, startingPoint = 0) {
 }
 const reduceToAllTrue = function(sourceArray){
   let newarray = [];
-  for (let val in sourceArray){
+  for (let val of sourceArray){
     if(val === false) newarray.push(val)
   }
   if(newarray.length > 0 ) return false;
@@ -27,7 +27,7 @@ const reduceToAllTrue = function(sourceArray){
 }
 const reduceToAnyTrue = function(sourceArray){
   let newarray = [];
-  for (let val in sourceArray){
+  for (let val of sourceArray){
     if(val === true) newarray.push(val)
   }
   if(newarray.length > 0 ) return true;
